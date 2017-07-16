@@ -17,14 +17,14 @@ class Plugin extends AbstractPlugin {
         $requestUri = $this->normalizePath($event->getRequestUrl());
 
         $path = $contentDirectory . '/' . $requestUri;
-        if (file_exists($path)){
+        if (file_exists($path) && is_file($path)){
             $event->setContentPath($path);
         }
     }
 
     private function normalizePath($path){
         $path = str_replace('\\', '/', $path);
-        $path = trim('/', $path);
+        $path = trim($path, '/');
 
         $query = strpos($path, '?');
         if ($query !== false){

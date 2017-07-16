@@ -63,7 +63,7 @@
             "source": {
                 "type": "git",
                 "url": "../phile-core",
-                "reference": "68e4d1d2edb2773e090375e18fe78cd5aea788a1"
+                "reference": "08f7a9e0a38a42bc16a15d03ce4c790c232e1486"
             },
             "require": {
                 "michelf/php-markdown": ">=1.4",
@@ -119,7 +119,7 @@
                 "plugins",
                 "twig"
             ],
-            "time": "2017-07-16 03:20:34"
+            "time": "2017-07-16 05:27:52"
         },
         {
             "name": "phpfastcache/phpfastcache",
