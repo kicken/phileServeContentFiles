@@ -6,10 +6,15 @@
   "homepage": "https://github.com/Schlaefer/phileServeContentFiles",
   "keywords": ["phile", "content"],
   "require": {
-    "phile-cms/phile": ">=1.4",
-    "phile-cms/plugin-installer-plugin": ">=1"
+    "phile-cms/phile-core": "dev-master"
   },
-  "suggest": {
-    "siezi/phile-total-cache": "caching for improved performance"
-  }
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "../phile-core",
+      "options": {
+        "symlink": false
+      }
+    }
+  ]
 }
