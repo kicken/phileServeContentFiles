@@ -8,6 +8,11 @@
   "require": {
     "phile-cms/phile-core": "dev-master"
   },
+  "autoload": {
+    "psr-4": {
+      "Phile\\Plugin\\ServeContentFiles\\": "src/"
+    }
+  },
   "repositories": [
     {
       "type": "vcs",
