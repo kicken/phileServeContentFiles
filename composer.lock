@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2a1c20ce2ba26b83267ec441687d9655",
+    "content-hash": "e2857b69a2af4d6dd73a66d2417cda77",
     "packages": [
         {
             "name": "michelf/php-markdown",
@@ -59,11 +59,17 @@
         },
         {
             "name": "phile-cms/phile-core",
-            "version": "dev-master",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
-                "url": "../phile-core",
-                "reference": "08f7a9e0a38a42bc16a15d03ce4c790c232e1486"
+                "url": "https://github.com/kicken/phile-core.git",
+                "reference": "ddcc72432fd0404f3f65bf54f67f54f9319bfd33"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kicken/phile-core/zipball/ddcc72432fd0404f3f65bf54f67f54f9319bfd33",
+                "reference": "ddcc72432fd0404f3f65bf54f67f54f9319bfd33",
+                "shasum": ""
             },
             "require": {
                 "michelf/php-markdown": ">=1.4",
@@ -119,7 +125,11 @@
                 "plugins",
                 "twig"
             ],
-            "time": "2017-07-16 05:27:52"
+            "support": {
+                "source": "https://github.com/kicken/phile-core/tree/v2.0.0",
+                "issues": "https://github.com/kicken/phile-core/issues"
+            },
+            "time": "2017-07-23T03:04:38+00:00"
         },
         {
             "name": "phpfastcache/phpfastcache",
@@ -179,7 +189,7 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.8.24",
+            "version": "v2.8.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
@@ -239,7 +249,7 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.8.24",
+            "version": "v2.8.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
@@ -355,9 +365,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "phile-cms/phile-core": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
