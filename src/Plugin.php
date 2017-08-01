@@ -16,7 +16,7 @@ class Plugin extends AbstractPlugin {
         $contentDirectory = $this->normalizePath($this->phileConfig['content_dir']);
         $requestUri = $this->normalizePath($event->getRequestUrl());
 
-        $path = $contentDirectory . '/' . $requestUri;
+        $path = $contentDirectory . '/' . ltrim($requestUri, '/');
         if (file_exists($path) && is_file($path)){
             $event->setContentPath($path);
         }
@@ -24,7 +24,7 @@ class Plugin extends AbstractPlugin {
 
     private function normalizePath($path){
         $path = str_replace('\\', '/', $path);
-        $path = trim($path, '/');
+        $path = rtrim($path, '/');
 
         $query = strpos($path, '?');
         if ($query !== false){
